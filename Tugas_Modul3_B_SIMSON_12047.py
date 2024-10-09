@@ -59,7 +59,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1 style='text-align: center; color: #4CAF50;'>Prediksi IPK - 1978</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #4CAF50;'>Prediksi IPK - 2047</h1>", unsafe_allow_html=True)
 st.markdown("""<p style='text-align: center; color: #007366;'>Aplikasi ini berguna untuk memprediksi IPK berdasarkan nilai Matematika, Bahasa Inggris, dan Bahasa Indonesia</p>""", unsafe_allow_html=True)
 
 st.sidebar.markdown("<h3 class='header-text'>Upload File dan Input Nilai</h3>", unsafe_allow_html=True)
@@ -70,7 +70,7 @@ if uploaded_file is not None:
     st.write("<h3 style='text-align: center; color: #007366;'>Data yang diupload:</h3>", unsafe_allow_html=True)
     st.dataframe(input_data)
 
-        model_path = r'SVR_IPK_model.pkl'
+    model_path = r'SVR_IPK_model.pkl'
 
     if os.path.exists(model_path):
         with open(model_path, 'rb') as f:
